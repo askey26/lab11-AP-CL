@@ -36,4 +36,4 @@ def exp(a, b):
     return a**b
 
 def hypotenuse(a, b):
-    return math.sqrt((a**2) + (b**2))
+    return math.hypot(a, b)
