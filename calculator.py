@@ -4,10 +4,16 @@ calculator.py
 
 One function per operation, in order.
 """
+# First example
+
 import math
 
-# First example
-def add(a, b): 
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+
+def add(a, b):
     return a + b
 
 def sub(a, b):
