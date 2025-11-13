@@ -5,6 +5,9 @@ calculator.py
 One function per operation, in order.
 """
 # First example
+# https://github.com/askey26/lab11-AP-CL
+# Partner 1: Askey Pierre
+# Partner 2: Cody Lu
 
 import math
 
