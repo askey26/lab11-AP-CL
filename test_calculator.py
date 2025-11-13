@@ -28,12 +28,12 @@ class TestCalculator(unittest.TestCase):
 
     def test_logarithm(self): # 3 assertions
         self.assertEqual(log(10, 10), 1)
-        self.assertEqual(log(11, ))
+        self.assertEqual(log(100, 10), 2)
+        self.assertEqual(log(16, 2), 4)
 
     def test_log_invalid_base(self): # 1 assertion
-        # use same technique from test_divide_by_zero
-        fill in code
-    # ##########################
+        with self.assertRaises(ValueError):
+            log(-3, -4)
     
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
