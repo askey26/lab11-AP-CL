@@ -28,9 +28,12 @@ def div(a, b):
     return b / a
 
 def log(a, b):
-    if b < 0 or a < 0:
+    if b <= 0 or a <= 0:
         raise ValueError
     return math.log(b, a)
 
 def exp(a, b):
     return a**b
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
